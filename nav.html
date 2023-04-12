@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <title>nav</title>
+
+        <style>
+
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+
+            .navb{
+                box-shadow: 10px 10px lightblue;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            ul{
+                list-style-type: none;
+                background-color: aqua;
+                overflow: hidden;
+                 
+            }
+
+            li a{
+                text-decoration: none;
+                display: block;
+                padding-left: 5px;
+                font-size:25px;
+                box-shadow: inset;
+                
+            }
+
+            li a:hover{
+                
+               background-color: aliceblue;
+               color: red;
+            }
+
+            li{
+                float: right;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <div>
+            <div class="navb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="12332.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+                  <map name="workmap">
+                       <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.bing.com/ck/a?!&&p=c19d5981cc979773JmltdHM9MTY4MTI1NzYwMCZpZ3VpZD0zZTVjYTMxYi0yYjg0LTZmYzUtMGMyMC1iMWQ5MmFiMTZlMzEmaW5zaWQ9NTQ2MA&ptn=3&hsh=3&fclid=3e5ca31b-2b84-6fc5-0c20-b1d92ab16e31&psq=advantages+of+washing+machine&u=a1aHR0cHM6Ly93d3cuamF2YXRwb2ludC5jb20vYWR2YW50YWdlcy1hbmQtZGlzYWR2YW50YWdlcy1vZi13YXNoaW5nLW1hY2hpbmVzIzp-OnRleHQ9QWR2YW50YWdlcyUyMG9mJTIwV2FzaGluZyUyME1hY2hpbmUlMjAxJTIwMSUyOSUyMFdhc2hpbmclMjBNYWNoaW5lcyxMb25nLUxhc3RpbmclMjAuLi4lMjA2JTIwNiUyOSUyMFNpbXBsZXIlMjBDbG90aGVzJTIwRHJ5aW5nJTIw&ntb=1">
+                      
+                 </map>
+            </div>
+			
+			<div>
+			<p id="demo"></p>
+			<p id="demo1"></p>
+			<P id="demo2"></p>
+			<p id="demo3"></p>
+			<p id="demo4"></p>
+			
+			</div>
+
+ 
+        </div>
+    </body>
+	
+	<script>
+let te = "abcdefghijklmnopqrsytuvwxyz.";
+let res = te.lastIndexOf("y");
+
+document.getElementById("demo").innerHTML = result;
+
+let tex = "Hello World!";
+let length = tex.length;
+
+document.getElementById("demo1").innerHTML = length;
+
+
+let text1 = "cd";
+let text2 = "ab";
+let result = text1.localeCompare(text2);
+
+document.getElementById("demo2").innerHTML = result;
+
+let a = "A";
+document.getElementById("demo3").innerHTML = a.padEnd(6,"x");
+
+let text = "5";
+text = text.padStart(3,"0");
+
+document.getElementById("demo4").innerHTML = text;
+</script>
+
+</html>
